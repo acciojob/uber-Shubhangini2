@@ -31,7 +31,7 @@ public class AdminController {
 
 	@DeleteMapping("/delete")
 	public void deleteAdmin(@RequestParam Integer adminId){
-		deleteAdmin(adminId);
+		adminService.deleteAdmin(adminId);
 	}
 
 	@GetMapping("/listOfCustomers")
